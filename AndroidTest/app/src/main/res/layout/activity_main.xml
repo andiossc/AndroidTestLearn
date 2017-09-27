@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.firewall.androidtest.MainActivity">
+    android:gravity="center_horizontal"
+    android:background="#eeeeee"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.firewall.androidtest.progressbar.HorizontalProgress
+        android:id="@+id/progress_1"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        pv:max="100"
+        pv:progress="10"
+        pv:backgroundColor="#ffffffff"
+        pv:progressColor="#fc7b02"
+        pv:title_progress="迅停单 72%"
+        pv:completedIcon="@mipmap/banner_1"
+        pv:undoneIcon="@mipmap/banner_2"
+        pv:sectionCount="3"
+        android:layout_marginTop="20dp"
+        pv:titleTextSize="8sp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <com.firewall.androidtest.progressbar.HorizontalProgress
+        android:id="@+id/progress_2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        pv:max="100"
+        pv:progress="75"
+        pv:backgroundColor="#ffffffff"
+        pv:progressColor="#fc7b02"
+        pv:title_progress="迅停单 72%"
+        pv:completedIcon="@mipmap/banner_1"
+        pv:undoneIcon="@mipmap/banner_2"
+        pv:sectionCount="4"
+        android:layout_marginTop="20dp"
+        pv:titleTextSize="9sp"/>
+
+    <com.firewall.androidtest.progressbar.HorizontalProgress
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        pv:max="100"
+        pv:progress="75"
+        pv:backgroundColor="#ffffffff"
+        pv:progressColor="#fc7b02"
+        pv:title_progress="迅停单 72%"
+        pv:completedIcon="@mipmap/banner_1"
+        pv:undoneIcon="@mipmap/banner_2"
+        pv:sectionCount="3"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
